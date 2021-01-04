@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Like Bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="wrapper display">
+        <div class="emoji">
+            <div class="emoji1" data-title="Like">
+                <i class="fas fa-thumbs-up"></i>
+            </div>
+        </div>
+        <div class="emoji">
+            <div class="emoji2" data-title="Love">
+                <i class="fas fa-heart"></i>
+            </div>
+        </div>
+        <div class="emoji">
+            <div class="emoji3" data-title="HaHa">
+                <i class="fas fa-laugh-squint"></i>
+            </div>
+        </div>
+        <div class="emoji">
+            <div class="emoji4" data-title="Wow">
+                <i class="fas fa-surprise"></i>
+            </div>
+        </div>
+        <div class="emoji">
+            <div class="emoji5" data-title="Sad">
+                <i class="fas fa-sad-tear"></i>
+            </div>
+        </div>
+        <div class="emoji">
+            <div class="emoji6" data-title="Angry">
+                <i class="fas fa-angry"></i>
+            </div>
+        </div>
+    </div>
+
+    <button class="btn"><i class="fas fa-thumbs-up"></i> Like</button>
+
+    <script>
+        const btn = document.querySelector('.btn');
+        const wrap = document.querySelector('.wrapper');
+
+        btn.addEventListener('click', ()=>{
+            wrap.classList.toggle('display');
+        });
+
+    </script>
+
+</body>
+</html>
